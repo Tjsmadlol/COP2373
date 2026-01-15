@@ -8,6 +8,30 @@ Max_Tickets = 20
 MAX_PER_BUYER = 4
 
 def sell_tickets():
+    """
+      Manages the ticket selling process.
+
+      Parameters:
+      None
+
+      Variables:
+      tickets_remaining (int): Accumulator tracking remaining tickets.
+      total_buyers (int): Accumulator tracking number of buyers.
+      tickets_requested (int): Number of tickets requested by the user.
+
+      Logic:
+      1. Initialize tickets_remaining to 20.
+      2. Initialize total_buyers to 0.
+      3. Loop while tickets_remaining > 0.
+      4. Prompt user for number of tickets.
+      5. Validate input using if statements.
+      6. Subtract tickets from remaining tickets if valid.
+      7. Increment buyer counter.
+      8. When all tickets sold, call display_total_buyers.
+
+      Return:
+      None
+      """
     tickets_remaining = Max_Tickets
     total_buyers = 0
 
@@ -30,8 +54,25 @@ def sell_tickets():
     display_total_buyers(total_buyers)
 
 def display_total_buyers(total_buyers):
+    """
+        Displays the total number of buyers after all tickets are sold.
+
+        Parameters:
+        total_buyers (int): Total number of buyers.
+
+        Variables:
+        None
+
+        Logic:
+        1. Display a message indicating all tickets are sold.
+        2. Display the total number of buyers.
+
+        Return:
+        None
+        """
     print("\n All tickets have been sold!")
     print(f"Overall total number of buyers: {total_buyers}")
 
 #Calling the main ticket sales function
-sell_tickets()
+if __name__ == "__main__":
+    sell_tickets()
