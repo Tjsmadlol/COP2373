@@ -49,7 +49,7 @@ def sell_tickets():
         else:
             tickets_remaining -= tickets_requested
             total_buyers += 1
-        print(f"Successful Purchase. Tickets remaining: {tickets_remaining}")
+            print(f"Successful Purchase. Tickets remaining: {tickets_remaining}")
 
     display_total_buyers(total_buyers)
 
