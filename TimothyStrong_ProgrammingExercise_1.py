@@ -4,7 +4,9 @@
 
 # Program Ticket Sales
 
+#total tickets
 Max_Tickets = 20
+#constant to be adhered to
 MAX_PER_BUYER = 4
 
 def sell_tickets():
@@ -35,7 +37,7 @@ def sell_tickets():
     tickets_remaining = Max_Tickets
     total_buyers = 0
 
-    #loop until the tickets are all sold
+    #loops until the tickets are all sold
     while tickets_remaining > 0:
         print(f"\nTickets remaining: {tickets_remaining}")
 
@@ -73,6 +75,6 @@ def display_total_buyers(total_buyers):
     print("\n All tickets have been sold!")
     print(f"Overall total number of buyers: {total_buyers}")
 
-#Calling the main ticket sales function
+#Calls the main ticket sales function
 if __name__ == "__main__":
     sell_tickets()
