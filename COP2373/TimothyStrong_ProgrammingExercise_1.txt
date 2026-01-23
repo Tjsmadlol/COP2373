@@ -1,0 +1,47 @@
+# Technical Design Document: TimothyStrong_ProgrammingExercise_1
+
+# Name: Timothy Strong
+# Date: January 15, 2026
+# Program Description: This program simulates the pre-sale of a limited number of cinema tickets and displays the total buyers once all tickets are bought.
+
+## Function: display_total_buyers
+Displays the total number of buyers after all tickets are sold.
+
+Parameters:
+total_buyers (int): Total number of buyers.
+
+Variables:
+None
+
+Logic:
+1. Display a message indicating all tickets are sold.
+2. Display the total number of buyers.
+
+Return:
+None
+
+## Function: sell_tickets
+Manages the ticket selling process.
+
+Parameters:
+None
+
+Variables:
+tickets_remaining (int): Accumulator tracking remaining tickets.
+total_buyers (int): Accumulator tracking number of buyers.
+tickets_requested (int): Number of tickets requested by the user.
+
+Logic:
+1. Initialize tickets_remaining to 20.
+2. Initialize total_buyers to 0.
+3. Loop while tickets_remaining > 0.
+4. Prompt user for number of tickets.
+5. Validate input using if statements.
+6. Subtract tickets from remaining tickets if valid.
+7. Increment buyer counter.
+8. When all tickets sold, call display_total_buyers.
+
+Return:
+None
+
+#Link to your repository: https://github.com/Tjsmadlol/COP2373.git
