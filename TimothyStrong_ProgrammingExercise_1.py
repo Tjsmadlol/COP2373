@@ -5,7 +5,7 @@
 # Program Ticket Sales
 
 #total tickets
-Max_Tickets = 20
+Max_Tickets = 10
 #constant to be adhered to
 MAX_PER_BUYER = 4
 
