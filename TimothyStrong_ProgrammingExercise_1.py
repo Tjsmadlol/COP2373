@@ -41,7 +41,7 @@ def sell_tickets():
     while tickets_remaining > 0:
         print(f"\nTickets remaining: {tickets_remaining}")
 
-        tickets_requested = int(input("How many tickets would you like to buy (1-4)? "))
+        tickets_requested = int(input("How many tickets would you like to purchase today?"))
 
         #valid request
         if tickets_requested < 1 or tickets_requested > MAX_PER_BUYER:
