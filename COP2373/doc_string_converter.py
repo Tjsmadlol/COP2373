@@ -8,7 +8,7 @@ with open("TimothyStrong_Programming_Exercise_2.txt", "w") as doc:
     doc.write(f"# Name: Timothy Strong\n")
     doc.write(f"# Date: February 10, 2026\n")
     doc.write(
-        f"# Program Description: This program This program asks the user to enter an email message It scans the message for 30 common spam words/phrases.Each time a spam word appears, 1 point is added to the spam score providing a overall spam detecting score.\n\n")
+        f"# Program Description: This program asks the user to enter an email message It scans the message for 30 common spam words/phrases.Each time a spam word appears, 1 point is added to the spam score providing a overall spam detecting score.\n\n")
 
     # replace docstring_example with your assignment name
     for name, func in inspect.getmembers(TimothyStrong_Programming_Exercise_2, inspect.isfunction):
