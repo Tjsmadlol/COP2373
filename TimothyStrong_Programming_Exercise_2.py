@@ -66,34 +66,23 @@ def get_rating(score):
         return "High chance of spam"
     else:
         return "Very high chance of spam"
-# MAIN PROGRAM STARTS HERE
-# ----------------------------------------------------------
+# MAIN PROGRAM
+if __name__ == "__main__":
 
-# Get the list of spam words
-spam_words = get_spam_words()
+    spam_words = get_spam_words()
 
-# Ask user to enter an email message
-print("Enter an email message:")
-email_message = input()
+    print("Enter an email message:")
+    email_message = input()
 
-# Check the message for spam words
-score, found_words = check_spam(email_message, spam_words)
+    score, found_words = check_spam(email_message, spam_words)
+    rating = get_rating(score)
 
-# Get the spam likelihood rating
-rating = get_rating(score)
+    print("\nSpam Score:", score)
+    print("Spam Likelihood:", rating)
 
-# ----------------------------------------------------------
-# DISPLAY RESULTS
-# ----------------------------------------------------------
-print("\nSpam Score:", score)
-print("Spam Likelihood:", rating)
-
-# Show which words triggered the score
-print("Spam words found:")
-
-# If none were found, say so
-if len(found_words) == 0:
-    print("None")
-else:
-    for word in found_words:
-        print("-", word)
+    print("Spam words found:")
+    if len(found_words) == 0:
+        print("None")
+    else:
+        for word in found_words:
+            print("-", word)

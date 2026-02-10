@@ -1,0 +1,16 @@
+# Technical Design Document: TimothyStrong_Programming_Exercise_2
+
+# Name: Timothy Strong
+# Date: February 10, 2026
+# Program Description: This program asks the user to enter an email message It scans the message for 30 common spam words/phrases.Each time a spam word appears, 1 point is added to the spam score providing a overall spam detecting score.
+
+## Function: check_spam
+None
+
+## Function: get_rating
+None
+
+## Function: get_spam_words
+None
+
+#Link to your repository: https://github.com/Tjsmadlol/COP2373.git
