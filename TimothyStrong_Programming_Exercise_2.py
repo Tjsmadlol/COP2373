@@ -6,19 +6,14 @@
 #   2. Likelihood the message is spam
 #   3. Which words were found
 
-# Function 1:
-# This function returns a list of 30 spam words/phrases
-
+# Function 1: returns the list of spam words/phrases
+# ----------------------------------------------------------
 def get_spam_words():
-    return [
-        "free", "buy now", "winner", "prize", "coupon",
-        "discount", "clearance", "special offer", "limited time offer",
-        "exclusive deal", "act now", "urgent", "today only",
-        "last chance", "don't miss out", "offer expires",
-        "while stocks last", "hurry", "instant access", "save big",
-        "risk-free", "no obligation", "deal", "best price",
-        "serious bargain", "bonus", "cheap", "earn extra cash",
-        "get paid", "work from home"]
+    spam_words = ["free","free money","act now","urgent","limited time","don't miss out","hurry","winner",
+        "congratulations","prize","cash bonus","earn extra cash","make money","get paid","fast cash","financial freedom",
+        "work from home","be your own boss","additional income","no obligation","risk free","best price","exclusive deal",
+        "special offer","buy now","instant access","click here","limited offer","final notice","guaranteed"]
+    return spam_words
 
 # Function 2:
 # This function checks the email for spam words
