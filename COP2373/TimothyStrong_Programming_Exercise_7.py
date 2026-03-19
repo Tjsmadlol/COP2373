@@ -24,3 +24,16 @@ def display_sentences(sentences):
 
     print(f"\nTotal number of sentences: {len(sentences)}")
 
+def main():
+    # This function gets the paragraph from the user,
+    # calls the sentence-splitting function,
+    # and displays the results.
+
+    paragraph = input("Enter a paragraph: ")
+
+    sentences = split_into_sentences(paragraph)
+
+    display_sentences(sentences)
+
+
+main()
