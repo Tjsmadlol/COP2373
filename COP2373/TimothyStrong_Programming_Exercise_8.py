@@ -29,3 +29,27 @@ def create_grades_file():
             writer.writerow([first_name, last_name, exam1, exam2, exam3])
 
     print("\ngrades.csv file created successfully.")
+
+def display_grades_file():
+    """Read grades.csv and display in tabular format"""
+
+    # Open file for reading
+    with open("grades.csv", "r") as file:
+        reader = csv.reader(file)
+
+        print("\nStudent Grades:\n")
+
+        # Loop through rows and format output
+        for row in reader:
+            print(f"{row[0]:<15}{row[1]:<15}{row[2]:<10}{row[3]:<10}{row[4]:<10}")
+
+
+def main():
+    """Main function to run program"""
+
+    create_grades_file()
+    display_grades_file()
+
+
+# Run program
+main()
