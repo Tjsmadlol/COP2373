@@ -41,3 +41,44 @@ class BankAcct:
                 "\nAccount Number: " + str(self.account_number) +
                 "\nBalance: $" + str(round(self.amount, 2)) +
                 "\nInterest Rate: " + str(self.interest_rate))
+
+# Test function
+def test_account():
+    # Create a test account
+    acct = BankAcct("Tim", 12345, 1000, 0.05)
+
+    print("Starting Account:")
+    print(acct)
+    print()
+
+    # Test deposit
+    acct.deposit(200)
+    print("After deposit:")
+    print(acct.get_balance())
+    print()
+
+    # Test withdrawal
+    acct.withdraw(100)
+    print("After withdrawal:")
+    print(acct.get_balance())
+    print()
+
+    # Test interest rate change
+    acct.adjust_interest_rate(0.07)
+    print("New interest rate:")
+    print(acct.interest_rate)
+    print()
+
+    # Test interest calculation
+    interest = acct.calculate_interest(30)
+    print("Interest for 30 days:")
+    print(round(interest, 2))
+    print()
+
+    # Final account display
+    print("Final Account:")
+    print(acct)
+
+
+# Run the test
+test_account()
